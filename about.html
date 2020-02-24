@@ -13,7 +13,7 @@
 
 </head>
 
-<body onload="w3.includeHTML();slider();">
+<body onload="w3.includeHTML();">
 
     <header>
         <div w3-include-html="header.html"></div>
@@ -21,7 +21,10 @@
 
     <div class="container">
         <h1>ABOUT US</h1>
-        <div id="slideshow"></div>
+        <div id="slideshow">
+            <button class="button-style" onclick="change_image(-1);">&#10094;</button>
+            <button class="button-style" onclick="change_image(+1);">&#10095;</button>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Vel risus commodo viverra maecenas accumsan lacus vel. Diam quam nulla porttitor massa. Bibendum at varius vel pharetra vel turpis nunc eget lorem. In nibh mauris cursus mattis molestie. Aliquam ut porttitor leo a diam sollicitudin. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim. Id aliquet risus feugiat in. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. Eu nisl nunc mi ipsum faucibus. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Turpis cursus in hac habitasse platea dictumst quisque sagittis. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Convallis tellus id interdum velit laoreet. Amet cursus sit amet dictum sit amet justo. Mauris nunc congue nisi vitae suscipit tellus mauris a. Orci porta non pulvinar neque laoreet suspendisse interdum.
             <br><br>
         Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Risus ultricies tristique nulla aliquet. Neque gravida in fermentum et sollicitudin ac. Cras tincidunt lobortis feugiat vivamus at augue. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Consectetur adipiscing elit pellentesque habitant. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Ac odio tempor orci dapibus ultrices in iaculis nunc. Auctor neque vitae tempus quam pellentesque nec nam. Id porta nibh venenatis cras sed. Massa sapien faucibus et molestie ac feugiat.
@@ -34,12 +37,10 @@
     </div>
 
     <script type="text/javascript">
-        var i = 0;
-        function change_image() {
-            document.getElementById("slideshow").style.backgroundImage = "url(../img/slides/img"+(i++ % 30)+".jpg";
-        }
-        function slider() {
-            setInterval(change_image, 4000);
+        var i = 16;
+        function change_image(n) {
+            i += n;
+            document.getElementById("slideshow").style.backgroundImage = "url(../img/slides/img"+(i % 30)+".jpg";
         }
     </script>
     
