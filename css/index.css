@@ -1,3 +1,7 @@
+::root {
+  --primary_color: black;
+}
+
 .top_image {
   background-image: url(../img/hotel/23725873.jpg);
   width: 100%;
@@ -12,14 +16,121 @@
   margin-top: -5vw;
 }
 
+.col_2 {
+  display: grid;
+  margin: 16px 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: white;
+}
+
+.floating {
+  box-shadow: rgba(0, 0, 0, 0.267) 0 4px 8px;
+  transition: all 0.3s;
+}
+
+.floating:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.267) 0 8px 8px;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+  margin: 32px 0;
+}
+
 .main__title {
   text-align: left;
   font-size: 2.7rem;
   margin-bottom: 8px;
+  color: var(--primary_color);
   font-family: "Roboto Slab";
+}
+
+.main__description {
+  font-family: "Roboto Slab";
+  text-align: left;
+  margin-bottom: 16px;
+  color: rgb(138, 138, 138);
+  font-size: 1.5rem;
 }
 
 .main__content {
   text-align: left;
   font-family: "Roboto Slab";
+}
+
+.sub__container {
+  margin: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto Slab";
+}
+
+.sub--right {
+  text-align: right;
+}
+
+.sub--left {
+  text-align: left;
+}
+
+.sub__title {
+  margin-bottom: 8px;
+}
+
+.sub__content {
+  margin-bottom: 16px;
+}
+
+.sub__image {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  padding: 16px 32px;
+  width: 150px;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+.heading {
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  margin: 42px 0 16px 0;
+}
+
+.heading::after,
+.heading::before {
+  content: "";
+  flex: 1 1;
+  width: 100%;
+  margin: 0 32px;
+  height: 2px;
+  background: grey;
+}
+
+@media only screen and (max-width: 1080px) {
+  .col_2 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content" "image";
+  }
+
+  .sub__content {
+    grid-area: content;
+  }
+
+  .sub__image {
+    grid-area: image;
+    margin-bottom: 32px;
+  }
+
+  .sub__container {
+    text-align: center;
+  }
 }
