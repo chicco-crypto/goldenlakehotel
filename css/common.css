@@ -4,3 +4,38 @@ body,
   margin: 0;
   padding: 0;
 }
+
+.container {
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  padding: 64px;
+  padding-bottom: 40px;
+}
+
+.floating_button {
+  margin: auto;
+  display: flex;
+  padding: 20px;
+  width: 50vw;
+  background-color: white;
+  transition: all 0.3s;
+  font-size: 1.4em;
+  color: black;
+  margin-top: -32px;
+  box-shadow: #00000056 0 4px 8px;
+}
+
+.floating_button:hover {
+  background-color: rgb(255, 247, 202);
+}
+
+.floating_button::before {
+  content: "";
+  flex: 1 1;
+}
+
+.floating_button::after {
+  content: "";
+  flex: 1 1;
+}
