@@ -7,6 +7,7 @@ function change_image(n) {
 
   slideshowContainer.style.opacity = 0;
 
+  //Change image after 0.2s transition
   setTimeout(() => {
     slideshowContainer.style.backgroundImage =
       "url(../img/slides/img" + (i % 30) + ".jpg";
