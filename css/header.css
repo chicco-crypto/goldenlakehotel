@@ -14,16 +14,16 @@ html,
 .nav {
   display: flex;
   align-items: center;
-  width: 60%;
+  width: 100%;
   padding: 0 20%;
   height: 75px;
   background-color: white;
   box-shadow: #00000077 0 2px 8px;
   z-index: 10;
+  box-sizing: border-box;
 }
 
 .nav__logo {
-  margin: 0 16px;
   color: white;
   height: 60px;
   width: 60px;
@@ -54,7 +54,6 @@ html,
   height: 38px;
   background-color: var(--accent_color);
   border: none;
-  margin-right: 16px;
   margin-left: 32px;
   font-size: 1rem;
   color: white;
@@ -68,4 +67,30 @@ html,
 
 .nav__btn:active {
   background-color: var(--primary_color);
+}
+
+@media only screen and (max-width: 1080px) {
+  .nav {
+    padding: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav {
+    padding: 0 2.5%;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .nav__btn {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .nav {
+    padding: 0 16px;
+  }
 }

@@ -20,6 +20,7 @@
 .col_2 {
   display: grid;
   margin: 16px 0;
+  height: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   background-color: white;
@@ -77,6 +78,10 @@
   text-align: left;
 }
 
+.sub--80 {
+  width: 80%;
+}
+
 .sub__title {
   margin-bottom: 8px;
   color: var(--primary_color);
@@ -84,7 +89,7 @@
 }
 
 .sub__content {
-  margin-bottom: 16px;
+  transition: all 0.2s;
 }
 
 .sub__image {
@@ -104,7 +109,7 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  margin: 42px 0 16px 0;
+  margin: 48px 0 32px 0;
   color: var(--primary_color);
   font-family: "Times New Roman", Times, serif;
 }
@@ -113,16 +118,95 @@
 .heading::before {
   content: "";
   flex: 1 1;
-  width: 100%;
-  margin: 0 32px;
+  width: 90%;
+  margin: 0 5%;
   height: 2px;
   background: var(--secondary_color);
 }
 
-@media only screen and (max-width: 1080px) {
+.rooms_holder {
+  height: 400px;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  position: relative;
+}
+
+.rooms_btn {
+  top: calc(50% - 40px);
+  position: absolute;
+  width: 32px;
+  border: none;
+  opacity: 0.8;
+  height: 64px;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.rooms_btn:hover {
+  opacity: 1;
+}
+
+.rooms_btn:active {
+  transform: scale(0.9);
+}
+
+.rooms_btn--left {
+  left: 8px;
+}
+
+.rooms_btn--right {
+  right: 8px;
+}
+
+.room_img {
+  transition: all 0.2s;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/rooms/room_4.jpg");
+}
+
+.book_now_btn {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 16px;
+  width: 144px;
+  height: 42px;
+  background-color: var(--accent_color);
+  border: none;
+  font-size: 1rem;
+  color: white;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.book_now_btn:hover {
+  background-color: var(--secondary_color);
+}
+
+.book_now_btn:active {
+  background-color: var(--primary_color);
+}
+
+@media only screen and (max-width: 900px) {
   .col_2 {
     grid-template-columns: 1fr;
     grid-template-areas: "content" "image";
+  }
+
+  .rooms_holder {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "image" "content";
+    position: relative;
+  }
+
+  .sub--left {
+    text-align: center;
+  }
+
+  .sub--80 {
+    width: 100%;
   }
 
   .sub__content {
