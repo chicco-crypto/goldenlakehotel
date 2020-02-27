@@ -67,13 +67,23 @@
 
         <div class="heading">Our Rooms</div>
 
-
+        <div class="rooms_holder floating">
+            <button class="rooms_btn rooms_btn--left" onclick="change_room(-1);">&#10094;</button>
+            <div class="room_img" id="room_img"></div>
+            <div class="sub__content">
+                <h2 class="sub__title sub--left" id="room_name">Rooms name</h2>
+                <p id="room_desc" class="sub--left">Room description</p>
+            </div>
+            <button class="rooms_btn rooms_btn--right" onclick="change_room(+1);">&#10095;</button>
+        </div>
 
     </div>
 
     <footer>
         <div w3-include-html="footer.html"></div>
     </footer>
+
+    <script src="src/rooms_slideshow.js"></script>
 
 </body>
 
