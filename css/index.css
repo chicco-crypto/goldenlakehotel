@@ -78,6 +78,10 @@
   text-align: left;
 }
 
+.sub--80 {
+  width: 80%;
+}
+
 .sub__title {
   margin-bottom: 8px;
   color: var(--primary_color);
@@ -85,7 +89,6 @@
 }
 
 .sub__content {
-  margin: 16px;
   transition: all 0.2s;
 }
 
@@ -162,7 +165,28 @@
   background-image: url("../img/rooms/room_4.jpg");
 }
 
-@media only screen and (max-width: 1080px) {
+.book_now_btn {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 16px;
+  width: 144px;
+  height: 42px;
+  background-color: var(--accent_color);
+  border: none;
+  font-size: 1rem;
+  color: white;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.book_now_btn:hover {
+  background-color: var(--secondary_color);
+}
+
+.book_now_btn:active {
+  background-color: var(--primary_color);
+}
+
+@media only screen and (max-width: 900px) {
   .col_2 {
     grid-template-columns: 1fr;
     grid-template-areas: "content" "image";
@@ -179,6 +203,10 @@
 
   .sub--left {
     text-align: center;
+  }
+
+  .sub--80 {
+    width: 100%;
   }
 
   .sub__content {
