@@ -1,13 +1,10 @@
-.container {
-  padding-top: 3.5cm;
+:root {
+  --primary_color: #daa520;
+  --secondary_color: #ccb579;
 }
 
-.container h1 {
-  color: goldenrod;
-  text-align: left;
-  font-size: 2.7rem;
-  margin-bottom: 8px;
-  font-family: "Roboto Slab";
+.container {
+  padding-top: 3.5cm;
 }
 
 .container p {
@@ -15,6 +12,31 @@
   font-size: 25px;
   font-family: "Roboto Slab";
   padding: 20px 10px 20px 10px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 48px 0 32px 0;
+  color: var(--primary_color);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.heading::after,
+.heading::before {
+  content: "";
+  flex: 1 1;
+  width: 100%;
+  height: 2px;
+  background: var(--secondary_color);
+}
+
+.heading h1 {
+  background-color: white;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 #slideshow {
