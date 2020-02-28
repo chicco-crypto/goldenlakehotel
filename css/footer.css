@@ -1,19 +1,49 @@
 
 .a {
   background-color: rgb(255, 255, 255);
+  font-family: 'Montserrat';
 }
 
 .b {
-   right: 1000px;
+   position: relative;
+   left: 810px;
+   top: 60px;
 }
 
 .c {
    font-style: italic;
    position: fixed;
    text-align: center;
-   background-color: black;
+   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23a6d5, #23d5ab ) ;
    color: white;
    bottom: 0;
    width: 100%;
 }
 
+.d {
+   position: relative;
+   left: 800px;
+   bottom: 250px;
+   font-family: 'Montserrat';
+   }
+.e {
+   position: relative;
+   left: 650px;
+   bottom: 220px;
+}
+
+.f {
+  size: 1000px;
+}
+
+.g {
+   position: relative;
+   left: 650px;
+   top: 80px;
+
+}
+
+.h {
+   position: relative;
+   left: 150px;
+}
