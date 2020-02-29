@@ -26,6 +26,7 @@
 
 .room_name {
   color: var(--primary_color);
+  margin: 16px;
   margin-top: 4px;
 }
 
