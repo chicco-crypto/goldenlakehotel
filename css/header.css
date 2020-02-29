@@ -17,7 +17,16 @@ html,
   width: 100%;
   padding: 0 20%;
   height: 75px;
-  background-color: white;
+  background: rgb(255, 240, 204);
+  background: linear-gradient(
+    42deg,
+    rgba(255, 240, 204, 1) 0%,
+    rgba(255, 255, 255, 1) 22%,
+    rgba(255, 255, 255, 1) 54%,
+    rgba(247, 237, 210, 1) 70%,
+    rgba(233, 202, 123, 1) 89%,
+    rgba(218, 165, 32, 1) 100%
+  );
   box-shadow: #00000077 0 2px 8px;
   z-index: 1;
   box-sizing: border-box;

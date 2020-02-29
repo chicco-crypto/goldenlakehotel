@@ -10,6 +10,11 @@ body,
   padding: 0;
 }
 
+body {
+  background-image: url("../img/common/gold_pattern.jpg");
+  background-size: contain;
+}
+
 .container {
   width: 70vw;
   box-sizing: border-box;
