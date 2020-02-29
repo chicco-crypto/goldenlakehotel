@@ -17,9 +17,18 @@ html,
   width: 100%;
   padding: 0 20%;
   height: 75px;
-  background-color: white;
+  background: rgb(255, 240, 204);
+  background: linear-gradient(
+    42deg,
+    rgba(255, 240, 204, 1) 0%,
+    rgba(255, 255, 255, 1) 22%,
+    rgba(255, 255, 255, 1) 54%,
+    rgba(247, 237, 210, 1) 70%,
+    rgba(233, 202, 123, 1) 89%,
+    rgba(218, 165, 32, 1) 100%
+  );
   box-shadow: #00000077 0 2px 8px;
-  z-index: 10;
+  z-index: 1;
   box-sizing: border-box;
 }
 
@@ -57,7 +66,7 @@ html,
   margin-left: 32px;
   font-size: 1rem;
   color: white;
-  transition: all 0.3s;
+  transition: background-color 0.3s, color 0.3s;
   outline: none;
 }
 
@@ -75,6 +84,17 @@ html,
   width: 100%;
 }
 
+.menu_holder {
+  width: 20px;
+  padding: 10px 0;
+  cursor: pointer;
+  display: none;
+}
+
+#nav_toggle {
+  display: none;
+}
+
 @media only screen and (max-width: 1080px) {
   .nav {
     padding: 0 10%;
@@ -86,12 +106,75 @@ html,
     padding: 0 2.5%;
   }
 
+  .menu_holder {
+    display: block;
+  }
+
+  .menu_icon,
+  .menu_icon:after,
+  .menu_icon:before {
+    height: 3px;
+    width: 20px;
+    background-color: var(--accent_color);
+    content: "";
+    display: block;
+    transition: transform 0.2s, width 0.1s;
+    position: absolute;
+  }
+
+  .menu_icon:before {
+    transform: translateY(7px);
+  }
+
+  .menu_icon:after {
+    transform: translateY(-7px);
+  }
+
+  #nav_toggle:checked ~ .menu_holder .menu_icon:after {
+    transform: rotate(45deg);
+  }
+
+  #nav_toggle:checked ~ .menu_holder .menu_icon:before {
+    transform: rotate(-45deg);
+  }
+
+  #nav_toggle:checked ~ .menu_holder .menu_icon {
+    width: 0;
+  }
+
+  #nav_toggle:checked ~ .nav__links {
+    transform: translateX(100vw);
+  }
+
+  #nav_toggle:checked ~ .nav__links a {
+    display: block;
+  }
+
   .nav__links {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 75px;
+    text-align: center;
+    background-color: white;
+    transform: translateX(0);
+    transition: transform 0.2s;
+    transition-timing-function: ease-out;
+  }
+
+  .nav__links a {
+    display: block;
+    margin: 16px 0 0 0;
+    padding: 8px 0;
+    font-size: 1.2em;
   }
 
   .nav__btn {
-    margin: 0;
+    margin: 32px auto 0 auto;
+    display: block;
   }
 }
 

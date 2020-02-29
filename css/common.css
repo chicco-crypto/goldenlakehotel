@@ -1,8 +1,18 @@
+:root {
+  --primary_color: #daa520;
+  --secondary_color: #ccb579;
+}
+
 html,
 body,
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-image: url("../img/common/gold_pattern.jpg");
+  background-size: contain;
 }
 
 .container {
@@ -12,6 +22,31 @@ body,
   text-align: center;
   padding: 64px;
   padding-bottom: 40px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 48px 0 32px 0;
+  color: var(--primary_color);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.heading::after,
+.heading::before {
+  content: "";
+  flex: 1 1;
+  width: 100%;
+  height: 2px;
+  background: var(--secondary_color);
+}
+
+.heading h1 {
+  background-color: white;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .floating_button {
@@ -39,6 +74,10 @@ body,
 .floating_button::after {
   content: "";
   flex: 1 1;
+}
+
+.sticky_nav_fix {
+  padding-top: 75px;
 }
 
 @media only screen and (max-width: 1080px) {

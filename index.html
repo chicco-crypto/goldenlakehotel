@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden Lake Hotel</title>
 
-    <link rel="icon" href="img/common/logo.png" type="image/icon type">
+    <link rel="icon" href="img/common/logo_small.png" type="image/icon type">
+
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/common.css">
@@ -15,7 +17,7 @@
 
 </head>
 
-<body onload="w3.includeHTML();">
+<body onload="w3.includeHTML();" class="sticky_nav_fix">
 
     <header>
         <div w3-include-html="header.html"></div>
@@ -77,7 +79,10 @@
             </div>
             <button class="rooms_btn rooms_btn--right" onclick="change_room(+1);">&#10095;</button>
         </div>
-        <a href="#"><button class="book_now_btn floating">Book Now</button></a>
+
+        <a
+            href="https://www.agoda.com/the-golden-lake-hotel/hotel/nay-pyi-taw-mm.html?site_id=1829952&tag=ee5847bc-383f-41f4-bffd-55decbdefd4e&device=c&network=g&adid=358485872782&rand=7306408011679192763&expid=&adpos=&gclid=Cj0KCQiAkePyBRCEARIsAMy5ScuM_fQYXqkvWgT1lQP4IHW9XSNmzUGcWD4lf8LkJIpFUikTCWoM1ssaAq09EALw_wcB&checkin=2020-03-19&checkout=2020-03-20&adults=2&childs=0&rooms=1&los=1#"><button
+                class="book_now_btn floating">Book Now</button></a>
 
     </div>
 
@@ -85,6 +90,7 @@
         <div w3-include-html="footer.html"></div>
     </footer>
 
+    <script src="src/rooms_data.js"></script>
     <script src="src/rooms_slideshow.js"></script>
 
 </body>

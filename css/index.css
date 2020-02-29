@@ -163,7 +163,7 @@
   transition: all 0.2s;
   background-size: cover;
   background-position: center center;
-  background-image: url("../img/rooms/room_4.jpg");
+  background-image: url("../img/rooms/room_0.jpg");
 }
 
 .book_now_btn {
@@ -194,10 +194,10 @@
   }
 
   .rooms_holder {
-    height: 600px;
+    height: 500px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 3fr 2fr;
     grid-template-areas: "image" "content";
     position: relative;
   }
