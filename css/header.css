@@ -150,7 +150,8 @@ html,
 
   .nav__links a {
     display: block;
-    margin: 16px 0 0 0;
+    margin: 8px 0 0 0;
+    padding: 8px 0;
     font-size: 1.2em;
   }
 
