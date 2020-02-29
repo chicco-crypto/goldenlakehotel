@@ -11,7 +11,7 @@
    font-style: italic;
    position: fixed;
    text-align: center;
-   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23a6d5, #23d5ab ) ;
+   background: linear-gradient(to right,#008cff,#ff0055) ;
    color: white;
    bottom: 0;
    width: 100%;
@@ -40,4 +40,30 @@
    font-family: 'Montserrat';
    display: flex;
    flex-direction: row;
+}
+
+.facebook {
+   position: relative;
+   width: 50%;
+   right: 17px;
+   padding: 20px;
+}
+
+.instagram {
+   position: relative;
+   width: 40%;
+   padding: 20px;
+   right: 5px;
+}
+
+.twitter {
+   position: relative;
+   left: 12px;
+   width: 30%;
+   padding: 20px;
+}
+
+.f {
+   height: 100px;
+   width: 100%;
 }
