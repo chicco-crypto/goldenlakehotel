@@ -19,7 +19,7 @@ html,
   height: 75px;
   background-color: white;
   box-shadow: #00000077 0 2px 8px;
-  z-index: 10;
+  z-index: 1;
   box-sizing: border-box;
 }
 
@@ -133,6 +133,14 @@ html,
     width: 0;
   }
 
+  #nav_toggle:checked ~ .nav__links {
+    transform: translateX(100vw);
+  }
+
+  #nav_toggle:checked ~ .nav__links a {
+    display: block;
+  }
+
   .nav__links {
     display: block;
     position: absolute;
@@ -150,18 +158,8 @@ html,
 
   .nav__links a {
     display: block;
-    margin: 8px 0 0 0;
-    padding: 8px 0;
-    font-size: 1.2em;
-  }
-
-  #nav_toggle:checked ~ .nav__links {
-    transform: translateX(100vw);
-  }
-
-  #nav_toggle:checked ~ .nav__links a {
-    display: block;
     margin: 16px 0 0 0;
+    padding: 8px 0;
     font-size: 1.2em;
   }
 
