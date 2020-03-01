@@ -63,6 +63,9 @@ body {
   margin-top: 16px;
   width: 144px;
   height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--accent_color);
   border: none;
   font-size: 1rem;
@@ -77,6 +80,12 @@ body {
 
 .main_btn:active {
   background-color: var(--primary_color);
+}
+
+.main_btn img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
 
 .sticky_nav_fix {
