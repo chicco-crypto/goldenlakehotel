@@ -24,6 +24,15 @@ body {
   padding-bottom: 40px;
 }
 
+.col_2 {
+  display: grid;
+  margin: 16px 0;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: white;
+}
+
 .heading {
   font-size: 1.5rem;
   font-weight: bold;
@@ -92,6 +101,10 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+  body {
+    background-image: none;
+  }
+
   .container {
     width: 95vw;
     box-sizing: border-box;
@@ -99,6 +112,11 @@ body {
     text-align: center;
     padding: 64px;
     padding-bottom: 40px;
+  }
+
+  .col_2 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content" "image";
   }
 }
 

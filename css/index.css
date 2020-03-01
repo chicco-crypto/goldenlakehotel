@@ -18,15 +18,6 @@
   margin-top: -5vw;
 }
 
-.col_2 {
-  display: grid;
-  margin: 16px 0;
-  height: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  background-color: white;
-}
-
 .floating {
   box-shadow: rgba(0, 0, 0, 0.267) 0 4px 8px;
   transition: all 0.3s;
@@ -188,11 +179,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .col_2 {
-    grid-template-columns: 1fr;
-    grid-template-areas: "content" "image";
-  }
-
   .rooms_holder {
     height: 500px;
     display: grid;
