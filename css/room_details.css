@@ -1,0 +1,38 @@
+.col_2 {
+  display: grid;
+  margin: 16px 0;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: white;
+}
+
+.container {
+  margin-top: 32px;
+  text-align: left;
+}
+
+.room_img {
+  width: 100%;
+}
+
+.main_img {
+  width: 100%;
+}
+
+.secondary_img {
+  width: 20%;
+}
+
+.room_info {
+  width: 100%;
+  margin: 0 16px;
+}
+
+.room_name {
+  color: var(--primary_color);
+}
+
+.room_description {
+  margin-top: 8px;
+}
