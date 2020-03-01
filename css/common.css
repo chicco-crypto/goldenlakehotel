@@ -58,35 +58,39 @@ body {
   margin-left: 2rem;
 }
 
-.floating_button {
-  margin: auto;
-  display: flex;
-  padding: 20px;
-  width: 50vw;
-  background-color: white;
+.main_btn {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 16px;
+  width: 144px;
+  height: 42px;
+  background-color: var(--accent_color);
+  border: none;
+  font-size: 1rem;
+  color: white;
   transition: all 0.3s;
-  font-size: 1.4em;
-  color: black;
-  margin-top: -32px;
-  box-shadow: #00000056 0 4px 8px;
+  outline: none;
 }
 
-.floating_button:hover {
-  background-color: rgb(255, 247, 202);
+.main_btn:hover {
+  background-color: var(--secondary_color);
 }
 
-.floating_button::before {
-  content: "";
-  flex: 1 1;
-}
-
-.floating_button::after {
-  content: "";
-  flex: 1 1;
+.main_btn:active {
+  background-color: var(--primary_color);
 }
 
 .sticky_nav_fix {
   padding-top: 75px;
+}
+
+.floating {
+  box-shadow: rgba(0, 0, 0, 0.267) 0 4px 8px;
+  transition: all 0.3s;
+}
+
+.floating:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.267) 0 8px 8px;
 }
 
 @media only screen and (max-width: 1080px) {
