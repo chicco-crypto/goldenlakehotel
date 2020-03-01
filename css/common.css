@@ -72,6 +72,7 @@ body {
   color: white;
   transition: all 0.3s;
   outline: none;
+  text-decoration: none;
 }
 
 .main_btn:hover {
