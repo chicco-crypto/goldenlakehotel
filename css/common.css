@@ -86,7 +86,7 @@ body {
 .main_btn img {
   width: 16px;
   height: 16px;
-  margin-right: 8px;
+  margin: 0 8px;
 }
 
 .sticky_nav_fix {
