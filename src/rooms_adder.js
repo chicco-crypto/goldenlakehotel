@@ -15,12 +15,6 @@ var roomCardRaw = `
       <img src="img/common/bed.svg" class="room_icon" alt="">
       <p id="bed_size">Bed size number here</p>
       </div>
-      <div href="#" class="secondary_btn secondary_btn--turn">Read More
-      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 482.239 482.239" height="18"
-      viewBox="0 0 482.239 482.239" width="18">
-      <path
-          d="m206.812 34.446-206.812 206.673 206.743 206.674 24.353-24.284-165.167-165.167h416.31v-34.445h-416.31l165.236-165.236z" />
-  </svg></div>
     </div>
       </div>
 `;
