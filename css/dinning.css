@@ -7,9 +7,8 @@
 .recommendation {
     display: flex;
     flex-direction:column;
-    justify-content: left;
+    justify-content: center;
     flex-flow: wrap;
-
 }
 
 .secondrecommendation {
@@ -50,7 +49,7 @@
 }
 
 .container:hover .overlay {
-    opacity: 1;
+    opacity: 0.5;
 }
 .container:hover .overlayLEFT {
     width: 100%;
@@ -137,4 +136,43 @@
     position: absolute;
     top: 0px;
     left: 0px;
+}
+
+#container1 {
+    left: 130px;
+   bottom: 32px;
+}
+
+#container2 {
+    left: 45px;
+    bottom: 32px;
+    
+}
+
+#container3 {
+    right: 45px;
+    bottom: 32px;
+   
+}
+
+#container4 {
+    right: 130px;
+    bottom: 32px;
+    
+}
+
+#container5 {
+    left: 130px;
+}
+
+#container6 {
+    left: 45px;
+}
+
+#container7 {
+    right: 45px;
+}
+
+#container8 {
+    right: 130px;
 }
