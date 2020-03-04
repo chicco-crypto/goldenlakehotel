@@ -5,18 +5,24 @@ var roomCardRaw = `
   <div class="room_content">
     <div class="room_details">
       <img src="img/common/size.svg" class="room_icon" alt="">
-      <p>Room size number here</p>
+      <p id="room_size">Room size number here</p>
     </div>
     <div class="room_details">
       <img src="img/common/window.svg" class="room_icon" alt="">
-      <p>View here</p>
+      <p id="room_view">View here</p>
     </div>
-    <div class="room_details">
+    <div class="room_details room_details--long">
       <img src="img/common/bed.svg" class="room_icon" alt="">
-      <p>Bed size number here</p>
+      <p id="bed_size">Bed size number here</p>
+      </div>
+      <div href="#" class="secondary_btn secondary_btn--turn">Read More
+      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 482.239 482.239" height="18"
+      viewBox="0 0 482.239 482.239" width="18">
+      <path
+          d="m206.812 34.446-206.812 206.673 206.743 206.674 24.353-24.284-165.167-165.167h416.31v-34.445h-416.31l165.236-165.236z" />
+  </svg></div>
     </div>
-  </div>
-</div>
+      </div>
 `;
 
 var roomIndex = 0;
@@ -32,7 +38,18 @@ for (roomIndex = 0; roomIndex < roomName.length; roomIndex++) {
     .children("img")
     .attr("src", "img/rooms/room_" + roomIndex + ".jpg");
   roomCardUI.children("h2").text(roomName[roomIndex]);
-  roomCardUI.children("p").text(roomDescriptions[roomIndex]);
+
+  var roomDetails = roomCardUI
+    .children(".room_content")
+    .children(".room_details");
+
+  roomDetails
+    .children("#room_size")
+    .text(roomSpecifics["room_size"][roomIndex]);
+  roomDetails
+    .children("#room_view")
+    .text(roomSpecifics["room_view"][roomIndex]);
+  roomDetails.children("#bed_size").text(roomSpecifics["bed_size"][roomIndex]);
 
   roomCardUI.attr("onclick", "gotoRoomsDetail(" + roomIndex + ")");
 
