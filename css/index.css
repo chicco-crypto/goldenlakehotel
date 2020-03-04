@@ -41,7 +41,7 @@
 
 .main__content {
   text-align: left;
-  font-family: "Roboto Slab";
+  font-family: "Times New Roman", Times, serif;
 }
 
 .sub__container {
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: "Roboto Slab";
+  font-family: "Times New Roman", Times, serif;
 }
 
 .sub--right {
