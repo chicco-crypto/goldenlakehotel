@@ -1,6 +1,7 @@
 var slideshowContainer = document.getElementById("room_img");
 var roomNameUI = document.getElementById("room_name");
 var roomDescriptionsUI = document.getElementById("room_desc");
+var readMoreBtn = document.getElementById("read_more");
 
 var i = 0;
 
@@ -18,9 +19,10 @@ function change_room(n) {
   slideshowContainer.style.opacity = 0;
   roomNameUI.style.opacity = 0;
   roomDescriptionsUI.style.opacity = 0;
+  readMoreBtn.style.opacity = 0;
 
   //Index starts at 1
-  var roomIndex = i % 5;
+  var roomIndex = i % roomName.length;
 
   console.log(roomIndex);
 
@@ -30,9 +32,11 @@ function change_room(n) {
       "url(../img/rooms/room_" + roomIndex + ".jpg";
     roomNameUI.innerHTML = roomName[roomIndex];
     roomDescriptionsUI.innerHTML = roomDescriptions[roomIndex];
+    readMoreBtn.href = "room_details.html?r=" + roomIndex;
 
     slideshowContainer.style.opacity = 1;
     roomNameUI.style.opacity = 1;
     roomDescriptionsUI.style.opacity = 1;
+    readMoreBtn.style.opacity = 1;
   }, 200);
 }

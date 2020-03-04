@@ -1,0 +1,28 @@
+.container {
+  text-align: left;
+}
+
+.room_img {
+  width: 100%;
+}
+
+.main_img {
+  width: 100%;
+}
+
+.secondary_img {
+  width: 20%;
+}
+
+.room_info {
+  width: 100%;
+  margin: 16px;
+}
+
+.room_name {
+  color: var(--primary_color);
+}
+
+.room_description {
+  margin-top: 8px;
+}
