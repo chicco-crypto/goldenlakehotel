@@ -22,7 +22,7 @@ function change_room(n) {
   readMoreBtn.style.opacity = 0;
 
   //Index starts at 1
-  var roomIndex = i % 5;
+  var roomIndex = i % roomName.length;
 
   console.log(roomIndex);
 
