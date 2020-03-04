@@ -1,7 +1,7 @@
 var roomCardRaw = `
 <div class="room_card" id="room_card">
+  <h1 class="room_name">Super Single</h1>
   <img src="img/rooms/room_1.jpg" alt="" class="room_img">
-  <h2 class="room_name">Super Single</h2>
   <div class="room_content">
     <div class="room_details">
       <img src="img/common/size.svg" class="room_icon" alt="">
@@ -31,7 +31,7 @@ for (roomIndex = 0; roomIndex < roomName.length; roomIndex++) {
   roomCardUI
     .children("img")
     .attr("src", "img/rooms/room_" + roomIndex + ".jpg");
-  roomCardUI.children("h2").text(roomName[roomIndex]);
+  roomCardUI.children("h1").text(roomName[roomIndex]);
 
   var roomDetails = roomCardUI
     .children(".room_content")
