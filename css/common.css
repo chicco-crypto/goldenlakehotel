@@ -139,6 +139,17 @@ body {
   box-shadow: rgba(0, 0, 0, 0.267) 0 8px 8px;
 }
 
+.room_details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.room_icon {
+  max-width: 40px;
+  margin-right: 8px;
+}
+
 @media only screen and (max-width: 1080px) {
   .container {
     width: 80vw;
@@ -172,6 +183,10 @@ body {
   .sticky_nav_fix {
     padding-top: 75px;
     margin-top: 42px !important;
+  }
+
+  .room_details {
+    flex-direction: column;
   }
 }
 
