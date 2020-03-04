@@ -15,6 +15,10 @@ body {
   background-size: contain;
 }
 
+p {
+  font-size: 1.05em;
+}
+
 .container {
   width: 70vw;
   box-sizing: border-box;
