@@ -3,8 +3,8 @@
   font-family: "Montserrat";
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 32px;
 }
 
 .c {
@@ -60,7 +60,6 @@
 }
 
 .f {
-   height: 100px;
-   width: 100%;
+  margin-bottom: 32px;
+  width: 100%;
 }
-

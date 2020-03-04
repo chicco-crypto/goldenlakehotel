@@ -1,22 +1,22 @@
 var roomCardRaw = `
 <div class="room_card" id="room_card">
+  <h1 class="room_name">Super Single</h1>
   <img src="img/rooms/room_1.jpg" alt="" class="room_img">
-  <h2 class="room_name">Super Single</h2>
   <div class="room_content">
     <div class="room_details">
       <img src="img/common/size.svg" class="room_icon" alt="">
-      <p>Room size number here</p>
+      <p id="room_size">Room size number here</p>
     </div>
     <div class="room_details">
       <img src="img/common/window.svg" class="room_icon" alt="">
-      <p>View here</p>
+      <p id="room_view">View here</p>
     </div>
-    <div class="room_details">
+    <div class="room_details room_details--long">
       <img src="img/common/bed.svg" class="room_icon" alt="">
-      <p>Bed size number here</p>
+      <p id="bed_size">Bed size number here</p>
+      </div>
     </div>
-  </div>
-</div>
+      </div>
 `;
 
 var roomIndex = 0;
@@ -31,8 +31,19 @@ for (roomIndex = 0; roomIndex < roomName.length; roomIndex++) {
   roomCardUI
     .children("img")
     .attr("src", "img/rooms/room_" + roomIndex + ".jpg");
-  roomCardUI.children("h2").text(roomName[roomIndex]);
-  roomCardUI.children("p").text(roomDescriptions[roomIndex]);
+  roomCardUI.children("h1").text(roomName[roomIndex]);
+
+  var roomDetails = roomCardUI
+    .children(".room_content")
+    .children(".room_details");
+
+  roomDetails
+    .children("#room_size")
+    .text(roomSpecifics["room_size"][roomIndex]);
+  roomDetails
+    .children("#room_view")
+    .text(roomSpecifics["room_view"][roomIndex]);
+  roomDetails.children("#bed_size").text(roomSpecifics["bed_size"][roomIndex]);
 
   roomCardUI.attr("onclick", "gotoRoomsDetail(" + roomIndex + ")");
 

@@ -27,16 +27,25 @@
 }
 
 .room_name {
+  background: linear-gradient(
+    42deg,
+    rgba(255, 240, 204, 1) 0%,
+    rgba(255, 255, 255, 1) 22%,
+    rgba(255, 255, 255, 1) 54%,
+    rgba(247, 237, 210, 1) 70%,
+    rgba(233, 202, 123, 1) 89%,
+    rgba(218, 165, 32, 1) 100%
+  );
   color: var(--primary_color);
-  margin: 16px;
-  margin-top: 4px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  font-size: 1.8em;
 }
 
 .room_content {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   margin: 16px;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 800px) {
