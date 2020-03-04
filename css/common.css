@@ -58,6 +58,42 @@ body {
   margin-left: 2rem;
 }
 
+.secondary_btn {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 16px;
+  width: 144px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1.5px var(--accent_color);
+  font-size: 1rem;
+  color: var(--accent_color);
+  transition: all 0.3s;
+  outline: none;
+  text-decoration: none;
+}
+
+.secondary_btn svg {
+  width: 16px;
+  height: 16px;
+  margin: 0 8px;
+  fill: var(--accent_color);
+  transition: transform 0.3s;
+}
+
+.secondary_btn:hover svg {
+  transform: translateX(-8px);
+}
+
+.secondary_btn--turn svg {
+  transform: rotate(180deg);
+}
+
+.secondary_btn--turn:hover svg {
+  transform: translateX(8px) rotate(180deg);
+}
+
 .main_btn {
   font-family: "Times New Roman", Times, serif;
   margin-top: 16px;
