@@ -194,6 +194,15 @@ p {
     padding-top: 75px;
     margin-top: 42px !important;
   }
+
+  .room_icon {
+    margin: 0;
+  }
+
+  .room_details {
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
