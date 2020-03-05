@@ -1,178 +1,172 @@
 .heading {
-    align-items: center;
+  align-items: center;
 }
 
-
-
 .recommendation {
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    flex-flow: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-flow: wrap;
 }
 
 .secondrecommendation {
-    display: flex;
-    flex-direction:column;
-    justify-content: left;
-    flex-flow: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-flow: wrap;
 }
 
 .chickenrice {
-
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .chickenfriedrice {
-    width: 200px;
-    height: 300px;
-    object-fit:cover;
-    position: absolute;
-    display: block;
-    top: 0px;
-    left: 0px;
-
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
 }
 
-.container{
-    position: relative;
-    width: 200px;
-    height: 300px;
-    display: inline-block;
-
+.food_container {
+  width: 70vw;
+  box-sizing: border-box;
+  margin: auto;
+  text-align: center;
+  padding: 64px;
+  padding-bottom: 40px;
 }
 
-.container:hover .overlay {
-    opacity: 0.5;
+.food_container {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  display: inline-block;
 }
-.container:hover .overlayLEFT {
-    width: 100%;
+
+.food_container:hover .overlay {
+  opacity: 0.5;
+}
+.food_container:hover .overlayLEFT {
+  width: 100%;
 }
 
 .overlay {
-    position: absolute;
-    transition: all .3s ease;
-    opacity: 0;
-    background-color: #eee;
+  position: absolute;
+  transition: all 0.3s ease;
+  opacity: 0;
+  background-color: #eee;
 }
-   
+
 .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
 
 .overlayLEFT {
-    height: 100%;
-    width: 0;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to right,#ffd000,#ff004c)
-    
-
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #ffd000, #ff004c);
 }
 
-
 .noodlesalad {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-   
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .roastpork {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
-
 .summerduck {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .cocktail {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .sushi {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .icecream {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 #container1 {
-    left: 130px;
-   bottom: 32px;
+  left: 130px;
+  bottom: 32px;
 }
 
 #container2 {
-    left: 45px;
-    bottom: 32px;
-    
+  left: 45px;
+  bottom: 32px;
 }
 
 #container3 {
-    right: 45px;
-    bottom: 32px;
-   
+  right: 45px;
+  bottom: 32px;
 }
 
 #container4 {
-    right: 130px;
-    bottom: 32px;
-    
+  right: 130px;
+  bottom: 32px;
 }
 
 #container5 {
-    left: 130px;
+  left: 130px;
 }
 
 #container6 {
-    left: 45px;
+  left: 45px;
 }
 
 #container7 {
-    right: 45px;
+  right: 45px;
 }
 
 #container8 {
-    right: 130px;
+  right: 130px;
 }
