@@ -11,7 +11,24 @@
 }
 
 .secondary_img {
-  width: 20%;
+  width: calc(25% - 8px);
+  margin: 4px;
+  height: auto;
+  opacity: 0.5;
+
+  transition: opacity 0.3s;
+}
+
+.secondary_img:hover {
+  opacity: 0.8;
+}
+
+.secondary_img.active {
+  opacity: 1;
+}
+
+.secondary_img:first-child {
+  margin-left: 0;
 }
 
 .room_info {
