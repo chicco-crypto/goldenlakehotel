@@ -32,7 +32,7 @@
 }
 
 .room_info {
-  width: 100%;
+  width: calc(100% - 32px);
   margin: 16px;
 }
 
