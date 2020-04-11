@@ -17,6 +17,11 @@
   width: 100%;
   padding: 4px;
   z-index: 5;
+
+  word-wrap: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .d {
